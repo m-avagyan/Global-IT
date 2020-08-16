@@ -1,0 +1,82 @@
+// Colors
+
+$bg: #110022; // Body background color
+$f-bg: linear-gradient(136.18deg, #0e0927 0%, #200138 100%); // Footer background color
+$s-bg: linear-gradient(106.42deg, #7a56fd 0%, #65bff2 100%); // Subscribe background gradient color
+$l-cl: #fff; // Fonts white color
+
+// Flex-Box mixin and variables
+
+$c: center;
+$r: row;
+$col: column;
+$sa: space-around;
+$sb: space-between;
+$fs: flex-start;
+$fe: flex-end;
+
+@mixin flex($fd, $ai, $jc) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+// Main Styles and Classes
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, form, .btn {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+// Animations and Transitions
+
+@keyframes call {
+    0% {box-shadow: 0 0 0px 0px #00197170;}
+    100% {box-shadow: 0 0 0 .9vw #00197170;}
+}
+
+@keyframes dropdown {
+    0% {}
+    100% {top: 100%;}
+}
+
+@keyframes videos1 {
+    0% {}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes videos2 {
+    0% {}
+    100% {transform: rotate(-360deg);}
+}
+
+@keyframes circle {
+    0% {box-shadow: 0 0 0px 0px #42006a70;}
+    100% {box-shadow: 0 0 0 1.95vw #42006a70;}
+}
+
+@keyframes btn {
+    0% {box-shadow: 0 0 0px 0px #42006a70;}
+    100% {box-shadow: 0 0 0 .75vw #42006a70;}
+}
